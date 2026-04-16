@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NASA Meteorite Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>NASA Meteorite Explorer</h1>
+    <div id="map" style="height: 400px; width: 100%; margin-bottom: 20px"></div>
+    <div id="controls">
+      <div id="filter-section">
+        <input type="number" id="minYear" placeholder="Min Year" />
+        <input type="number" id="maxYear" placeholder="Max Year" />
+        <button id="filterYearBtn">Filter by Year</button>
+        <button id="resetFilterBtn">Reset Filter</button>
+      </div>
+      <div id="search-section">
+        <input type="text" id="searchName" placeholder="Search by Name" />
+        <button id="searchNameBtn">Search by Name</button>
+      </div>
+      <button id="downloadBtn">Download Filtered Data</button>
+    </div>
+    <div id="feedback"></div>
+    <div id="table-section">
+      <table id="meteoriteTable">
+        <thead>
+          <tr>
+            <th data-sort="id">ID</th>
+            <th data-sort="name">Name</th>
+            <th data-sort="year">Year</th>
+            <th data-sort="recclass">Recclass</th>
+            <th data-sort="mass">Mass</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="loading" style="display: none">Loading data...</div>
+    <script src="js/dataHandler.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/uiManager.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4hW9jFkeKFHGDL6pXWdsdrKdeJavkj_I&callback=initMap"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#filter-section {
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-bottom: 12px;
+  background: #f5faff;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#search-section {
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  padding: 10px 18px;
+  margin-bottom: 12px;
+  background: #e3f2fd;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#downloadBtn {
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+
+#feedback, #table-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#meteoriteTable {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+
